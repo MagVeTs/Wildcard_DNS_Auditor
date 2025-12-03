@@ -4,6 +4,8 @@ A lightweight Python utility designed to detect DNS Wildcard configurations on a
 
 This tool is particularly useful for SecOps, Penetration Testers, and Bug Bounty hunters who need to identify wildcard records (e.g., `*.dev.example.com`) to filter out false positives during subdomain enumeration.
 
+Works well with `.txt` files created by [`subdomain_filter.py`](https://github.com/MagVeTs/Subdomain_Filter/).
+
 ## Security Implications of Wildcard DNS
 
 Using Wildcard DNS (*.example.com) is generally considered insecure by design in modern infrastructure. While it offers convenience for developers, it introduces significant risks that often outweigh the benefits.
