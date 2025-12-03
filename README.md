@@ -11,7 +11,7 @@ Using Wildcard DNS (*.example.com) is generally considered insecure by design in
 1. **Phishing & Social Engineering**
 Wildcard DNS allows any subdomain to resolve. Attackers can abuse this to create convincing phishing URLs that appear to be hosted on your legitimate domain.
 
-Example: If you have a wildcard for `*.example.com`, an attacker can send a victim to `secure-password-reset.example.com`. Because the DNS resolves, the victim may see a valid domain (increasing the likelihood they will trust the page) - if the server at that IP serves a default page or can be manipulated.
+Example: If you have a wildcard for `*.example.com`, an attacker can send a victim to `secure-password-reset.example.com`. Because the DNS resolves, the victim may see a valid domain (increasing the likelihood they will trust the page), e.g. if the server at that IP serves a default page or can be manipulated.
 
 2. **Cookie Scoping & "Cookie Tossing"**
 If an application sets session cookies with a loose scope (e.g., `domain=.example.com`), those cookies are sent to all subdomains.
