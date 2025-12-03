@@ -35,7 +35,6 @@ The Risk: If you use a wildcard CNAME pointing to a third-party service (e.g., `
 - **Nested Subdomain Support**: Accepts a list of subdomains to check for nested wildcards (e.g., `*.staging.example.com`).
 
 - **False Positive Avoidance**: Uses random nonces (e.g., `wildcard-test-a1b2c3d4.example.com`) to ensure results are accurate and not cached.
-- 
 
 ## Reporting:
 
