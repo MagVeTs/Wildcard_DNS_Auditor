@@ -62,7 +62,7 @@ pip install dnspython
 
 ```
 Bash
-python wildcard_dns_auditor.py <DOMAIN> [SUBDOMAIN_LIST] [-o OUTPUT_FILE]
+python3 wildcard_dns_auditor.py <DOMAIN> [SUBDOMAIN_LIST] [-o OUTPUT_FILE]
 ```
 
 ## Arguments
@@ -78,19 +78,19 @@ python wildcard_dns_auditor.py <DOMAIN> [SUBDOMAIN_LIST] [-o OUTPUT_FILE]
 1. Basic check on a single domain: Checks if `*.example.com` exists.
 ```
 Bash
-python wildcard_dns_auditor.py example.com
+python3 wildcard_dns_auditor.py example.com
 ```
 
 2. Check a domain and a list of subdomains: Checks `*.example.com` and checks for wildcards on every subdomain listed in `example_subs.txt`.
 ```
 Bash
-python wildcard_dns_auditor.py example.com example_subs.txt
+python3 wildcard_dns_auditor.py example.com example_subs.txt
 ```
 
 3. Check and save results to a file: Runs the check and saves the full log and summary to `example_results.txt`.
 ```
 Bash
-python wildcard_dns_auditor.py example.com example_subs.txt -o example_results.txt
+python3 wildcard_dns_auditor.py example.com example_subs.txt -o example_results.txt
 ```
 
 ## Example Output
